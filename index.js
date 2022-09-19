@@ -30,4 +30,7 @@ const pubKeys = [
 console.log('p2ms', bitcoin.payments.p2ms({ m: 2, pubKeys }).address) // TypeError: Not enough data
 console.log('p2sh', bitcoin.payments.p2sh({ redeem: bitcoin.payments.p2ms({ m: 2, pubKeys }) }).address)
 console.log('p2wsh', bitcoin.payments.p2wsh({ pubkey: key.publicKey }).address)
+//console.log('p2ms', bitcoin.payments.p2ms({ m: 2, pubKeys }).address) // TypeError: Not enough data
+//console.log('p2sh', bitcoin.payments.p2sh({ redeem: bitcoin.payments.p2ms({ m: 2, pubKeys }) }).address)
+//console.log('p2wsh', bitcoin.payments.p2wsh({ pubkey: key.publicKey }).address)
 console.log('p2sh, p2ms, p2wsh はエラー。')
